@@ -12,7 +12,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        return Text("Hello, world!");
+        HStack(spacing: 0, content: {
+            ForEach(0..<4, content: {
+                index in
+                ZStack(content: {
+                    RoundedRectangle(cornerRadius: 10.0).fill(Color.white)
+                    RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3)
+                    Text("👻")
+                })
+            })
+        })
+        .padding()
+        .foregroundColor(Color.orange)
+        .font(Font.largeTitle)
     }
 }
 
