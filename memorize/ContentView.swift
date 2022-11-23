@@ -12,7 +12,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        return Text("Hello, world!")
+        return Text("Hello, world!");
     }
 }
 
